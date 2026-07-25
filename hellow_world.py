@@ -6,8 +6,6 @@ headers = CaseInsensitiveDict()
 headers["Content-Type"] = "application/json"
 data ='{"from":"pycharm"}'
 req_post_response = requests.post(url,headers=headers,data=data)
-print(req_post_response.text)
-print(req_post_response.json())
 print(req_post_response.status_code)
 print("*"*30)
 
